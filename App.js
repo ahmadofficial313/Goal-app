@@ -8,7 +8,7 @@ export default function App() {
   const [modalIsVisble,setModalIsVisible]= useState(false)
   
   function addGoalHandler(goalText){
-    setGoalList((prev)=>[...prev, {text:goalText, id:Math.random(1).toString()}])
+    setGoalList((prev)=>[...prev, {text:goalText, id:Math.random().toString()}])
     setModalIsVisible(false);
     
   }
